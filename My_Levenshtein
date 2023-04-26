@@ -1,0 +1,13 @@
+function my_levenshtein(string1, string2) {
+    if (string1.length != string2.length) {
+        return -1;
+        console.log("return -1");
+    }
+    var result = 0;
+    for (var i = 0; i < string1.length; i++) {
+        if (string1.length == string2.length && string1[i] != string2[i]) {
+            result++;
+        }
+    }
+    return result
+}
